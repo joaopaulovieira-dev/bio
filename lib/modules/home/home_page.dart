@@ -1,3 +1,4 @@
+import 'package:bio/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,8 +15,17 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Bio - João Paulo'),
       ),
-      body: const Center(
-        child: Text('Corpo'),
+      body: Container(
+        color: AppColors.background,
+        child: const Center(
+          child: Text(
+            'Home',
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+            ),
+          ),
+        ),
       ),
     );
   }

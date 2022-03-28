@@ -1,30 +1,15 @@
 import 'package:flutter/material.dart';
 
-abstract class AppColors {
-  Color get background;
-  Color get title;
-  Color get button;
-  Color get textSocialButton;
-  Color get subTitle;
-  Color get textWhite;
-}
+class AppColors {
+  static const background = Color(0xFF080c0c);
 
-class AppColorsDefault implements AppColors {
-  @override
-  Color get background => const Color(0xFF0c0c1c);
-
-  @override
-  Color get title => const Color(0xffffffff);
-
-  @override
-  Color get subTitle => const Color(0xffffffff);
-
-  @override
-  Color get button => const Color(0xffffffff);
-
-  @override
-  Color get textSocialButton => const Color(0xffffffff);
-
-  @override
-  Color get textWhite => const Color(0xffffffff);
+  static const primary = Color(0xFF080c0c);
+  static const secondary = Color(0xFF585666);
+  static const grey = Color(0xFF585666);
+  static const delete = Color(0xFFE83F5B);
+  static const heading = Color(0xFF585666);
+  static const body = Color(0xFF706E7A);
+  static const stroke = Color(0xFFE3E3E6);
+  static const shape = Color(0xFFFAFAFC);
+  static const input = Color(0xFFB1B0B8);
 }
