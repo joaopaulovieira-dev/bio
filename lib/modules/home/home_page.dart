@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Bio - João Paulo'),
+        backgroundColor: AppColors.primary,
       ),
       body: Container(
         color: AppColors.background,
@@ -22,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             'Home',
             style: TextStyle(
               fontSize: 30,
-              color: Colors.white,
+              color: AppColors.title,
             ),
           ),
         ),
