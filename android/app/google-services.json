@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "5697904541",
+    "project_id": "biografia-f75cb",
+    "storage_bucket": "biografia-f75cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5697904541:android:bff0b9dba78b9d28f71974",
+        "android_client_info": {
+          "package_name": "dev.joaopaulovieira.bio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5697904541-t549fg63h52f39pb56l0567v555hjdho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.joaopaulovieira.bio",
+            "certificate_hash": "10b06b282f707e45e9cf31f37b7e10b29e99c07d"
+          }
+        },
+        {
+          "client_id": "5697904541-gee5d86dokrviaq0onooo19p9brmhsls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1dHNmc0VUUsf-NZ93VkN0r5kFJvYeZNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5697904541-gee5d86dokrviaq0onooo19p9brmhsls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
