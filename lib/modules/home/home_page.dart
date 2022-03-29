@@ -14,33 +14,48 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-            color: AppColors.background,
-            child: Stack(children: <Widget>[
-              // Photo Perfil
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
-                Padding(
-                    padding: EdgeInsets.only(
-                      top: 60,
-                    ),
-                    child: PhotoPerfil())
-              ]),
+      //Backgroud
+      backgroundColor: AppColors.background,
+      body: Stack(children: <Widget>[
+        // Photo Perfil
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
+          Padding(
+            padding: EdgeInsets.only(
+              top: 40,
+            ),
+            child: PhotoPerfil(),
+          )
+        ]),
 
-              //Nome
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Padding(
-                    padding: const EdgeInsets.only(
-                      top: 230,
-                    ),
-                    child: Text(
-                      'João Paulo',
-                      style: TextStyles.name,
-                    ))
-              ]),
-              // Nome Centralizado
+        //Nome
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Padding(
+              padding: const EdgeInsets.only(
+                top: 185,
+              ),
+              child: Text(
+                'João Paulo',
+                style: TextStyles.namePerfil,
+              ))
+        ]),
 
-              //TODO: Implementar os retângulos de informações de contato/mídias sociais.
-              Container()
-            ])));
+        // Id Perfil
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Padding(
+              padding: const EdgeInsets.only(
+                top: 235,
+              ),
+              child: Text(
+                '@joaopaulovieira.dev',
+                style: TextStyles.idPerfil,
+              ))
+        ]),
+      ]),
+    );
   }
 }
+
+
+
+
+//TODO: Implementar os retângulos de informações de contato/mídias sociais.

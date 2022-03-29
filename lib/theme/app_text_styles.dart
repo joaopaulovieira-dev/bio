@@ -3,11 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextStyles {
-  static final name = GoogleFonts.lexendDeca(
-    fontSize: 32,
+  static final namePerfil = GoogleFonts.roboto(
+    fontSize: 37,
     fontWeight: FontWeight.w600,
-    color: AppColors.name,
+    color: AppColors.namePerfil,
   );
+
+  static final idPerfil = GoogleFonts.roboto(
+    fontSize: 20,
+    //fontWeight: FontWeight.w600,
+    color: AppColors.idPerfil,
+  );
+
   // static final titleRegular = GoogleFonts.lexendDeca(
   //   fontSize: 20,
   //   fontWeight: FontWeight.w400,

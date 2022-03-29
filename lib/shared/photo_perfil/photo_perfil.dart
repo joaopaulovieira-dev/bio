@@ -8,8 +8,8 @@ class PhotoPerfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       //Tamanho da imagem
-      width: 130,
-      height: 130,
+      width: 120,
+      height: 120,
       //decoração do container
       decoration: const BoxDecoration(
         //forma do container - circular
