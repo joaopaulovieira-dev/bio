@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const background = Color(0xFF05080A);
-  //static const background = Color(0xFF1A1A40);
+  static const background = Color(0xFF11345c);
+  static const name = Color(0xFFFFFFFF);
+
   static const primary = Color(0xFF270082);
   static const secondary = Color(0xFF7A0BC0);
   static const secondaryLight = Color(0xFFFA58B6);
@@ -13,5 +14,4 @@ class AppColors {
   static const stroke = Color(0xFFE3E3E6);
   static const shape = Color(0xFFFAFAFC);
   static const input = Color(0xFFB1B0B8);
-  static const title = Color(0xFFFFFFFF);
 }

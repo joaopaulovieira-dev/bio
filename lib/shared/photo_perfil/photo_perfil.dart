@@ -7,12 +7,17 @@ class PhotoPerfil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 100,
+      //Tamanho da imagem
+      width: 130,
+      height: 130,
+      //decoração do container
       decoration: const BoxDecoration(
+        //forma do container - circular
         shape: BoxShape.circle,
         image: DecorationImage(
+          //como a imagem vai ser ajustada para o container
           fit: BoxFit.cover,
+          //imagem do container
           image: AssetImage('assets/images/perfil.png'),
         ),
       ),
