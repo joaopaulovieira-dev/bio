@@ -1,7 +1,8 @@
 import 'dart:ui';
 
 import 'package:bio/shared/photo_perfil/widgets/photo_perfil.dart';
-import 'package:bio/shared/social_media/widgets/social_media.dart';
+import 'package:bio/shared/social_media/widgets/large_social_media_buttons.dart';
+import 'package:bio/shared/social_media/widgets/small_social_media_buttons.dart';
 import 'package:bio/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -78,8 +79,18 @@ class _HomePageState extends State<HomePage> {
                                 ))
                           ]),
 
-                      //
-                      // Id Perfil
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 235,
+                              ),
+                              child: SmallSocialButtonWidget(),
+                            )
+                          ]),
+
+                      // Large Social Media Buttons
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
@@ -87,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                               padding: EdgeInsets.only(
                                 top: 300,
                               ),
-                              child: SocialButtonWidget(),
+                              child: LargeSocialButtonWidget(),
                             )
                           ]),
                     ],

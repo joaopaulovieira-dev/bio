@@ -1,24 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class SocialButtonWidget extends StatefulWidget {
-  const SocialButtonWidget({Key? key}) : super(key: key);
+class LargeSocialButtonWidget extends StatefulWidget {
+  const LargeSocialButtonWidget({Key? key}) : super(key: key);
 
   @override
-  State<SocialButtonWidget> createState() => _SocialButtonWidgetState();
+  State<LargeSocialButtonWidget> createState() =>
+      _LargeSocialButtonWidgetState();
 }
 
 //TODO: Refatorar
-
-//Telefone
-_launchTelefone() async {
-  const url = 'tel:24981527163';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Não foi possível abrir o link: $url';
-  }
-}
 
 //WhatsApp
 _launchWhatsApp() async {
@@ -100,58 +91,20 @@ _launchTwitter() async {
   }
 }
 
-class _SocialButtonWidgetState extends State<SocialButtonWidget> {
+class _LargeSocialButtonWidgetState extends State<LargeSocialButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        //Telefone
-        Container(
-          width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.3),
-            borderRadius: BorderRadius.circular(5),
-          ),
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              highlightColor: Colors.white.withOpacity(0.2),
-              splashColor: Colors.white.withOpacity(0.5),
-              borderRadius: BorderRadius.circular(5),
-              onTap: () {
-                _launchTelefone();
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  // Image.asset(
-                  //   'assets/images/linkedin.png',
-                  //   width: MediaQuery.of(context).size.width * 0.1,
-                  // ),
-                  Text(
-                    'Telefone',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-
-        const SizedBox(height: 20),
-
+        const SizedBox(height: 60),
         //WhatsApp
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
+            // brilho da borda
           ),
           child: Material(
             color: Colors.transparent,
@@ -183,12 +136,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //Linkedin
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -223,12 +176,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //GitHub
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -263,12 +216,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //Portifólio
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -303,12 +256,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //StackOverflow
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -343,12 +296,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //Telegran
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -383,12 +336,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //Instagram
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -423,12 +376,12 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
 
         //Twitter
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.11,
+          height: MediaQuery.of(context).size.height * 0.10,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(5),
@@ -463,7 +416,7 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 13),
       ],
     );
   }
