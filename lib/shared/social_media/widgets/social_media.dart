@@ -1,4 +1,3 @@
-import 'package:bio/theme/app_gradients.dart';
 import 'package:flutter/material.dart';
 
 class SocialButtonWidget extends StatefulWidget {
@@ -18,8 +17,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: DefaultGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'Linkedin',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -30,19 +57,76 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: LinkedinGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'GitHub',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
         const SizedBox(height: 20),
+
         //Portifólio
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: GithubGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'Portifólio',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -53,8 +137,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: InstagramGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'Instagram',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -65,8 +177,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: WhatsappGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'WhatsApp',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -77,8 +217,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: TelegranGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'Telegran',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -89,8 +257,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: TwitterGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'Twitter',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 
@@ -101,8 +297,36 @@ class _SocialButtonWidgetState extends State<SocialButtonWidget> {
           width: MediaQuery.of(context).size.width * 0.8,
           height: MediaQuery.of(context).size.height * 0.11,
           decoration: BoxDecoration(
-            gradient: StackOverflowGradient.linear,
-            borderRadius: BorderRadius.circular(3),
+            color: Colors.white.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              highlightColor: Colors.white.withOpacity(0.2),
+              splashColor: Colors.white.withOpacity(0.5),
+              borderRadius: BorderRadius.circular(5),
+              onTap: () {
+                debugPrint("Pressionado");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  // Image.asset(
+                  //   'assets/images/linkedin.png',
+                  //   width: MediaQuery.of(context).size.width * 0.1,
+                  // ),
+                  Text(
+                    'StackOverflow',
+                    style: TextStyle(
+                      fontSize: 18,
+                      //fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
 

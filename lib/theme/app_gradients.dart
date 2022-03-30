@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DefaultGradient {
+class BackgroundGradient {
   static const linear = LinearGradient(
     colors: [
       Color.fromRGBO(0, 255, 255, 0.600),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const background = Color.fromARGB(255, 6, 17, 29);
   static const namePerfil = Color(0xFFFFFFFF);
-  static const idPerfil = Color(0xFF706E7A);
+  static const idPerfil = Color.fromARGB(255, 245, 243, 255);
 
   static const primary = Color(0xFF270082);
   static const secondary = Color(0xFF7A0BC0);
