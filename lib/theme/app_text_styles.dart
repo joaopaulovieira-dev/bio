@@ -15,6 +15,12 @@ class TextStyles {
     color: AppColors.idPerfil,
   );
 
+  static final socialName = GoogleFonts.roboto(
+    fontSize: 25,
+    fontWeight: FontWeight.w600,
+    color: AppColors.idPerfil,
+  );
+
   // static final titleRegular = GoogleFonts.lexendDeca(
   //   fontSize: 20,
   //   fontWeight: FontWeight.w400,

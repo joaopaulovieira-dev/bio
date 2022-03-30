@@ -22,14 +22,15 @@ class _HomePageState extends State<HomePage> {
             //Backgroud
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: NetworkImage(
-                      "https://www.ciribaipraiahotel.com.br/wp-content/uploads/2020/06/Benef%C3%ADcios-da-agua-do-Mar-para-a-Saude-626x350.jpg"),
+                  image: AssetImage('assets/images/mar.jpg'),
+                  //image: NetworkImage(
+                  //    "https://www.eusemfronteiras.com.br/wp-content/uploads/2019/02/35323177_m.jpg"),
                   fit: BoxFit.cover),
             ),
             child: BackdropFilter(
               filter: ImageFilter.blur(
-                sigmaX: 10.0,
-                sigmaY: 10.0,
+                sigmaX: 20.0,
+                sigmaY: 20.0,
               ),
               child: Container(
                 alignment: Alignment.center,
